@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jinja",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This plugin treats Jinja template expressions as Javascript literals and ignores template statements and comments",
   "main": "lib/index.js",
   "scripts": {
