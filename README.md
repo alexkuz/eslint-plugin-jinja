@@ -5,7 +5,7 @@ This plugin treats Jinja template expressions and statements as valid Javascript
 
 Plugin will convert (internally) this code:
 
-```
+```js
   (function() {
     'use strict';
 
@@ -31,7 +31,7 @@ Plugin will convert (internally) this code:
   })();
 ```
 into this:
-```
+```js
  (function() {
     'use strict';
 
