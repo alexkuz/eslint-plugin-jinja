@@ -31,6 +31,7 @@ const processHTML = {
 
 export default {
   processors: {
+    '.js': processHTML,
     '.html': processHTML,
     '.htm': processHTML
   }
