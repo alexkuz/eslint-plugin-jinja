@@ -1,5 +1,9 @@
+[![npm version](https://img.shields.io/npm/v/eslint-plugin-jinja.svg?style=flat)](https://www.npmjs.com/package/eslint-plugin-jinja)
+
 # eslint-plugin-jinja
 This plugin treats Jinja template expressions and statements as valid Javascript expressions, so that ESLint can check javascript code, ignoring any Jinja expression found.
+
+As a note, it is possible that this best effort conversion yeilds false negatives or positives because it is impossible to know the right way to insert placeholders.
 
 ### Example
 
