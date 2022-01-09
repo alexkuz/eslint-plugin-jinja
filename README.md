@@ -5,6 +5,8 @@ This plugin treats Jinja template expressions and statements as valid Javascript
 
 As a note, it is possible that this best effort conversion yeilds false negatives or positives because it is impossible to know the right way to insert placeholders.
 
+Also - some complex inline expressions might break and you might have to expand them.
+
 ### Example
 
 Plugin will convert (internally) this code:
@@ -28,7 +30,7 @@ Plugin will convert (internally) this code:
     var d = {% if something %} 'this is something' {% else %} null {% endif %};
 
     {# any other statements become comments #}
-    
+
     {% for i in [1, 2, 3] %}
       console.log(a, b, c, d);
     {% endfor %}
@@ -39,10 +41,9 @@ into this:
  (function() {
     'use strict';
 
-    /* plain jinja variables are converted into strings
-      (preferred quotes are getting from .eslintrc file) */
-
-    var a = 'this is' + '  some_variable  ';
+    /* plain jinja variables are converted into zeroed out regex patterns
+      to avoid having to guess preferred quotes */
+    var a = 'this is' + /00000000000/;
 
     /* if it is already in string, it is wrapped with spaces */
 
