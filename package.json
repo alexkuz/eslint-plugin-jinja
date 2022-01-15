@@ -1,7 +1,7 @@
 {
   "name": "@eladavron/eslint-plugin-jinja",
-  "version": "0.3.0",
-  "description": "This plugin treats Jinja template expressions as Javascript literals and ignores template statements and comments. It is a fork and update of the original eslint-plugin-jinja package by alexkuz.",
+  "version": "0.3.1",
+  "description": "This plugin treats Jinja template expressions as Javascript literals and ignores template statements and comments.",
   "main": "lib/index.js",
   "scripts": {
     "test": "npm test",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eladavron/eslint-plugin-jinja.git"
+    "url": "git+https://github.com/alexkuz/eslint-plugin-jinja.git"
   },
   "keywords": [
     "eslint",
@@ -22,17 +22,15 @@
     "jinja2",
     "template"
   ],
-  "author": "Elad Avron <eladavron@gmail.com>",
-  "maintainers": [{
-    "email": "eladavron@gmail.com",
-    "name": "Elad Avron",
-    "url": "https://github.com/eladavron/eslint-plugin-jinja/"
-  }],
+  "author": "Alexander <alexkuz@gmail.com> (http://kuzya.org/)",
+  "contributors": [
+    "Elad Avron <eladavron@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eladavron/eslint-plugin-jinja/issues"
+    "url": "https://github.com/alexkuz/eslint-plugin-jinja/issues"
   },
-  "homepage": "https://github.com/eladavron/eslint-plugin-jinja#readme",
+  "homepage": "https://github.com/alexkuz/eslint-plugin-jinja#readme",
   "devDependencies": {
     "@babel/cli": "^7.16.7",
     "@babel/core": "^7.16.7",
